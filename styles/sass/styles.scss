@@ -1,0 +1,227 @@
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/form";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fcf7ed;
+    overflow-x: hidden;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity:  1; }
+  }
+
+@keyframes hyphen {
+    0% {
+      width: 0.5em;
+    }
+    100% {
+      width: 1em;
+    }
+  }
+
+h1,
+li,
+a,
+ul,
+h2, 
+p,
+button,
+input{
+    margin: 0;
+    padding: 0;
+}
+// wave emoji
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s; 
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) } 
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+}
+
+//section bg changes
+section {
+    height: 100vh;
+    background-color: #fcf7ed;
+    position: sticky;
+    top: 0;
+
+}
+
+section.alternate {
+    background-color: #bccece;
+}
+
+// header
+.wrapper {
+    max-width: 1280px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    position: fixed;
+    top: -45px;
+    left: 0;
+    width: 180px;
+    height: 280px;
+
+    @include largeScreenMQ {
+        width: 200px;
+        height: 250px;
+    }
+
+    @include inbetweenMQ {
+        display: none;
+    }
+}
+
+header a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #383838;
+    text-decoration: none;
+
+    @include largeScreenMQ {
+        font-size: 2.3rem;
+    }
+}
+
+.linkNav {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: fixed;
+    right: 10px;
+    top: 0;
+}
+
+nav li {
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+// intro section
+
+.aboutMe {
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: calc(40px + (85 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    color: #bccece;
+}
+
+p {
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 50px;
+    font-family: 'Jost', serif;
+    color: #383838;
+}
+
+.aboutMe a {
+    color: #bccece;
+    text-decoration: none;
+}
+
+// skills section
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    color: #fcf7ed;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.skillsDiv {
+    display: flex;
+    justify-content: center;
+} 
+
+.skillsOne,
+.skillsTwo {
+    padding: 100px;
+}
+
+.skillsDiv ul li {
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    color: #fcf7ed;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+// project section
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    color: #bccece;
+    text-align: center;
+    padding-top: 50px;
+}
+// form section
+.formSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 70px 100px;
+    position: relative;
+}
+
+
+.formSection h2 {
+    text-align: left;
+}
+
+.contactForm {
+    margin-top: 70px;
+}
+.contactText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+// footer
+footer {
+    text-align: center;
+}
+
+.footer {
+    height: 10vh;
+}
+
+footer h3 {
+    margin: 0px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}

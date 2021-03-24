@@ -1,0 +1,40 @@
+@mixin buttonStyle {
+    background: #fcf7ed;
+    color: black; 
+    border: none;
+    padding: 10px 12px 2px 12px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    &:hover, 
+    &:focus {
+        background: #b6bbbb;
+        color: white;
+    }
+}
+
+@mixin buttonFont {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+@mixin largeScreenMQ {
+    @media screen and (max-width: 1130px) {
+        @content;
+    }
+}
+
+@mixin inbetweenMQ {
+    @media screen and (max-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin tabletMQ {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
