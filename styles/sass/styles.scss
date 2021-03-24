@@ -135,18 +135,18 @@ h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: calc(40px + (85 - 40) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 700;
-    color: #bccece;
+    color: #272626;
 }
 
 p {
-    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
     margin-top: 50px;
     font-family: 'Jost', serif;
-    color: #383838;
+    color: #272626;
 }
 
 .aboutMe a {
-    color: #bccece;
+    color: #5b6464;
     text-decoration: none;
 }
 
@@ -155,7 +155,7 @@ h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 700;
-    color: #fcf7ed;
+    color: #272626;
     text-align: center;
     padding-top: 50px;
 }
@@ -172,7 +172,7 @@ h2 {
 
 .skillsDiv ul li {
     font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
-    color: #fcf7ed;
+    color: #272626;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -183,7 +183,7 @@ h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 700;
-    color: #bccece;
+    color: #272626;
     text-align: center;
     padding-top: 50px;
 }
@@ -216,7 +216,7 @@ footer {
 }
 
 .footer {
-    height: 10vh;
+    height: 9vh;
 }
 
 footer h3 {
