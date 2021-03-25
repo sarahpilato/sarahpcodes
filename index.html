@@ -35,7 +35,7 @@
         <section id="about" class="aboutMe wrapper">
             <img src="./styles/assets/ghibliGif.gif" alt="spirited away gif" class="gif">
             <h1>Hi! <span class="wave">👋</span> I'm Sarah, and I'm a web developer based in Toronto. </h1>
-            <p>I'm passionate about writing code, and seeing my work come to fruition on a page! My dream is to build beautiful, creative and accessible websites. CSS is my love, and I'm driven by the limitless possibilities of design and creation involved in coding. When I'm not coding, you can find me either playing animal crossing, or <a href="https://www.instagram.com/skincarewithsaki/">talking about skincare online.</a></p>
+            <p>I'm passionate about writing code, and seeing my work come to fruition on a page! My dream is to build beautiful, creative and accessible websites. CSS is my love, and I'm driven by the limitless possibilities of design and creation involved in coding. When I'm not coding, you can find me either playing animal crossing, or <a href="https://www.instagram.com/skincarewithsaki/">talking about skincare online.</a> P.S. click around to decorate this site! 👀</p>
         </section>
 
     <!-- skills section begins --> 
@@ -66,27 +66,57 @@
     <!-- section ends -->
 
     <!-- project section begins -->
-    <section class="projects" id="projects">
+    <section class="projects wrapper" id="projects">
         <h3>Projects</h3>
-        <p class="wrapper">🌙COOL PROJECTS WILL GO HERE🌙</p>
+        <div class="projectDiv wrapper">
+            <h4>Haikus Highway: A Haiku Generator</h4>
+            <img src="./styles/assets/haikus-mockup.png" class="haikusHighway">       
+            <div class="flexParentColumn">
+                <p> A React app that allows users to generate their own haikus! Stores haikus through Firebase, displaying past haikus in a collection.</p> 
+                <a href="https://github.com/teamAwesomenessest/haikusHighway" class="repoLink">View on Github</a>
+                <a href="https://haikushighway.netlify.app/" class="liveLink">View Live</a>
+            </div>
+        </div>     
+        <div class="projectDiv wrapper">
+            <h4>Haikus Highway: A Haiku Generator</h4>
+            <img src="./styles/assets/honey-mockup.png" class="honeyReviews">       
+            <div class="flexParentColumn">
+               <p> A React app that allows users to submit skincare reviews, and have said reviews render on the page through a Firebase database.</p> 
+               <a href="https://github.com/sarahpilato/sarah-pilato-project-3" class="repoLink">View on Github</a>
+               <a href="https://festive-brattain-dcd2dc.netlify.app/" class="liveLink">View Live</a>
+            </div> 
+        </div>
+        <div class="projectDiv wrapper">
+            <h4>Haikus Highway: A Haiku Generator</h4>
+            <img src="./styles/assets/honey-mockup.png" class="honeyReviews">       
+            <div class="flexParentColumn">
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum repudiandae, voluptas blanditiis maiores cum a mollitia modi excepturi sapiente iste, repellendus dicta beatae facere sint! Minus at deserunt dolorum.</p> 
+               <a href="https://github.com/sarahpilato/sarah-pilato-project-3" class="repoLink">View on Github</a>
+               <a href="https://festive-brattain-dcd2dc.netlify.app/" class="liveLink">View Live</a>
+            </div> 
+        </div>
     </section>
     <!-- section ends -->
 
 <!-- contact section -->
-    <section class="formSection alternate" id="contact">
+    <section class="contact wrapper id="contact">
         <div class="contactText wrapper">
             <h2>Contact me!</h2>
-            <p>I'd love to work with you, or just talk in general about development, design and/or your favourite animal crossing villager. Feel free to use the form below or email me directly at <span>sarahkitap@gmail.com!</span></p>
+            <p>I'd love to work with you, or just talk in general about development, design and/or your favourite animal crossing villager. My e-mail is sarahkitap@gmail.com!</p>
         </div>
-    </div>
-    </main>
     </section>
-    <!-- section ends -->
     <footer>
-        <section class="footer">
-            <h3>Created by Sarah Pilato ☁️</h3>
+        <section class="footer wrapper">
+            <h3>☁️ Created by Sarah Pilato ☁️</h3>
         </section>
     </footer>
+    <div class="stamps">
+        <!-- this is where our stamps go -->
+    </div>
+    </main>
+
     <script src="./js/fadeIn.js"></script>
+    <script src="./js/stickers.js"></script>
+
 </body>
 </html>
