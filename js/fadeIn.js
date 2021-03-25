@@ -1,4 +1,4 @@
-const animatedTags = document.querySelectorAll(".linkNav, h1, p, img")
+const animatedTags = document.querySelectorAll(".linkNav, h1, img")
 
 // fade out on load
 animatedTags.forEach(tag => {
