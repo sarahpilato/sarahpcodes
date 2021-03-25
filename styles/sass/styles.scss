@@ -59,42 +59,14 @@ input{
     100% { transform: rotate( 0.0deg) }
 }
 
-//section bg changes
-section {
-    height: 100vh;
-    background-color: #fcf7ed;
-    position: sticky;
-    top: 0;
-
-}
-
-section.alternate {
-    background-color: #bccece;
-}
 
 // header
 .wrapper {
     max-width: 1280px;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 
-.logo {
-    position: fixed;
-    top: -45px;
-    left: 0;
-    width: 180px;
-    height: 280px;
-
-    @include largeScreenMQ {
-        width: 200px;
-        height: 250px;
-    }
-
-    @include inbetweenMQ {
-        display: none;
-    }
-}
 
 header a {
     font-family: 'Cormorant Garamond', serif;
@@ -102,7 +74,7 @@ header a {
     font-weight: 400;
     color: #383838;
     text-decoration: none;
-
+    
     @include largeScreenMQ {
         font-size: 2.3rem;
     }
@@ -127,22 +99,32 @@ ul {
 // intro section
 
 .aboutMe {
-    margin-top: 100px;
-    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gif {
+    width: 65%;
+    height: 225px;
+    margin: 50px 0;
 }
 
 h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: calc(40px + (85 - 40) * ((100vw - 300px) / (1600 - 300)));
-    font-weight: 700;
-    color: #272626;
+    font-family: 'Space Mono', monospace;
+    font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
+    // font-weight: 700;
+    color: #4b4c4d;
+    width: 65%;
 }
 
 p {
-    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
-    margin-top: 50px;
-    font-family: 'Jost', serif;
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 30px;
+    font-family: 'Cormorant Garamond', serif;
     color: #272626;
+    width: 65%;
 }
 
 .aboutMe a {
@@ -152,53 +134,53 @@ p {
 
 // skills section
 h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
-    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
     color: #272626;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .skillsDiv {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    
 } 
 
 .skillsOne,
 .skillsTwo {
-    padding: 100px;
+    padding: 20px;
 }
 
 .skillsDiv ul li {
-    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
     color: #272626;
     text-transform: uppercase;
     padding: 10px;
+    font-family: 'Space Mono', monospace;
 }
 
 // project section
 
 h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
-    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
     color: #272626;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
 }
+
 // form section
 .formSection {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     padding: 70px 100px;
     position: relative;
 }
 
 
 .formSection h2 {
-    text-align: left;
+    text-align: center;
 }
 
 .contactForm {
@@ -221,7 +203,7 @@ footer {
 
 footer h3 {
     margin: 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 10px;
 }
